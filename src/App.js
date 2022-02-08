@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router,
   Switch,
 } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import BeaniesPage from './BeaniesPage';
 import BeanieDetail from './BeanieDetail';
 

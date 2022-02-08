@@ -30,29 +30,28 @@ export default function BeanieDetail() {
   }, [match.params.id]);
 
   function handleBeanieClick() {
-    window.location.href === beanieBaby.link;
+    window.location.href === link;
   }
 
   return (
-      <Link to='/'>Home</Link>
-      <div className='beanie-detail' onClick={handleBeanieClick}>
-        <div className='beanie-data'>
-          <p>{beanieBaby.animal}</p>
-          <p>{beanieBaby.title}</p>
-          <p>Zodiac: {beanieBaby.astroSign}</p>
-          <p> Born on {beanieBaby.birthday}</p>
-          <img className='beanie-img' src={beanieBaby.image}/>
-          <p>Color: {beanieBaby.color}</p>
-          <p>Release Date: {beanieBaby.releaseDate}</p>
-          <p>Retirement Date: {beanieBaby.retirementDate}</p>
+    <><Link to='/'>Home</Link><div className='beanie-detail' onClick={handleBeanieClick}>
+      <div className='beanie-data'>
+        <p>{animal}</p>
+        <p>{title}</p>
+        <p>Zodiac: {astroSign}</p>
+        <p> Born on {birthday}</p>
+        <img className='beanie-img' src={image} />
+        <p>Color: {color}</p>
+        <p>Release Date: {releaseDate}</p>
+        <p>Retirement Date: {retirementDate}</p>
 
-          <p>Size: {beanieBaby.size}</p>
-          <p>Theme: {beanieBaby.theme}</p>
-          <p>Sub-Theme: {beanieBaby.subtheme}</p>
-          <p>Style Number: {beanieBaby.styleNumber}</p>
-          <p>Swing Tag Generation: {beanieBaby.swingTagGeneration}</p>
-          <p>Tush Tag Generation: {beanieBaby.tushTagGeneration}</p>
-        </div>
-      </div>  
+        <p>Size: {size}</p>
+        <p>Theme: {theme}</p>
+        <p>Sub-Theme: {subtheme}</p>
+        <p>Style Number: {styleNumber}</p>
+        <p>Swing Tag Generation: {swingTagGeneration}</p>
+        <p>Tush Tag Generation: {tushTagGeneration}</p>
+      </div>
+    </div></>  
   );
 }
